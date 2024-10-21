@@ -1,0 +1,26 @@
+
+ALTER TABLE personal_info add CONSTRAINT fk_user_personal_id 
+FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE;
+
+ALTER TABLE profile_pic
+add CONSTRAINT fk_user_id_profile_pic
+FOREIGN KEY profile_pic(user_id) REFERENCES users(id) on DELETE CASCADE;
+
+
+SELECT a.id,a.user_id, divisions.name as pDiv,districts.name as pDis, upazilas.name as pUp,divisions.name as hDiv,districts.name as hDis, upazilas.name as hUp, a.p_country,a.p_village,a.p_house,a.h_country,a.h_village,a.h_house
+FROM users u
+INNER JOIN address a
+ON u.id = a.user_id
+INNER JOIN divisions
+ON a.p_division = divisions.id
+INNER JOIN districts
+on a.p_division = districts.id
+INNER JOIN upazilas
+ON a.p_thana = upazilas.id 
+INNER JOIN divisions d
+on a.h_division = d.id
+INNER JOIN districts dis
+on a.h_district = dis.id
+INNER JOIN upazilas up 
+on a.h_thana = up.id
+WHERE u.id = 21;

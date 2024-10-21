@@ -1,0 +1,680 @@
+
+/* 
+==================================
+            Reset CSS 
+==================================
+ */
+ :root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+ body{
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #fff;
+    font-size: 16px  !important;
+ }
+ img{
+   width: 100%;
+   height: 100%;
+ }
+
+a{
+  text-decoration: none;
+}
+ul,ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ .showHide{
+  display: none;
+ }
+ .address ul {
+  margin-left: 30px;
+
+ }
+ .address ul li {
+  font-size: 22px;
+  line-height: 44px;
+ }
+
+
+/* 
+==================================
+            Menubar CSS 
+==================================
+ */
+ .navbar-brand img{
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+ }
+ 
+
+ .nav-link{
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 16px;
+    color: #282828;
+    transition: .5s;
+    position: relative;
+
+ }
+ .nav-link:hover{
+    color: #e72f59;
+ }
+ .nav-link::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #e72f59;
+  transition: .5s;
+ }
+ .nav-link:hover::after{
+  width: 100%;
+ }
+ .nav-link.active{
+    color: #e72f59 !important;
+ }
+ .menu-auth a,
+ .drop-btn{
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #e72f59;
+    margin: 8px;
+    color: #e72f59;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: .5s;
+ }
+ .menu-auth a:hover,
+ .drop-btn:hover{
+    color: #fff;
+    background-color: #e72f59;
+ }
+ .dropdown-menu{
+  z-index: 9999;
+ }
+
+ /* 
+==================================
+            Carousel CSS 
+==================================
+ */
+.homeSwiper{
+  z-index: -1;
+}
+ .slider-content-box{
+  position: relative;
+
+ }
+.slider-content-box img{
+  height: 100vh;
+ 
+}
+.slider-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+.slider-content h1{
+  font-size: 60px;
+  font-weight: 700;
+}
+.slider-content  p{
+  font-size: 30px;
+  font-weight: 500;
+}
+  /* 
+==================================
+            Weeding CSS 
+==================================
+ */
+ .weeding-soon{
+   background-color: #FAF5F4;
+   padding-top: 80px;
+ }
+ .weeding-wrap{
+   background-color: #fff;
+   padding: 100px 50px;
+   border-radius: 20px;
+  
+ }
+ .weeding-content h1{
+   font-size: 64px;
+   color: #282828;
+   font-weight: 700;
+ }
+ .weeding-content h2{
+   font-size: 42px;
+   color: #282828;
+   font-weight: 600;
+ }
+ .weeding-content h3{
+   color: #fff;
+   background-color: #e72f59;
+   padding: 60px 50px;
+   width: 300px;
+   text-align: center;
+   margin: 20px 0;
+ }
+ .weeding-content p{
+   color: #585858;
+   margin-top: 50px;
+ }
+ .slick-prev:before, .slick-next:before{
+  color:red;
+}
+.newperson-title{
+  color: #e72f59;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 50px;
+}
+.newperson-title::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 30%;
+  background-color: #e72f59;
+}
+ 
+/* 
+==================================
+            Footer CSS 
+==================================
+ */
+ .footer-top{
+   background-color: #2B2B2B;
+   padding: 50px 0;
+ }
+ .footer-top-content h2{
+   font-size: 27px;
+   font-weight: 300;
+
+ }
+ .foot-couple h1{
+   font-size: 49px;
+   line-height: 83px;
+   font-weight: 600;
+ }
+ .foot-couple img{
+   width: 200px;
+   margin: 0 20px;
+ }
+ .fot-menu{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .fot-menu li a{
+   display: inline-block;
+   margin: 0 10px;
+   text-decoration: none;
+   color: #fff;
+   line-height: 32px;
+   transition: .5s;
+   position: relative;
+ }
+ .fot-menu li a:hover{
+   color: #e72f59;
+ }
+ .fot-menu li a::after{
+   content: '';
+   position: absolute;
+   width: 0%;
+   height: 2px;
+   background-color: #e72f59;
+   left: 0;
+   bottom: 0;
+   transition: .5s;
+ }
+ .fot-menu li a:hover::after{
+   width: 100%;
+ }
+ .footer-bottom{
+   background-color: #313131;
+   color: #cecece;
+   padding: 15px 0;
+ }
+
+  
+/* 
+==================================
+            Login page CSS 
+==================================
+ */
+
+ .common-form{
+  width: 50%;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 70px auto;
+ }
+ .common-form h1{
+  color: #e72f59;
+  font-size: 40px;
+ }
+ .form-btn{
+  width: 100%;
+  padding: 8px 10px;
+  background-color: #e72f59;
+  border: none;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 25px;
+ }
+
+ 
+  /* 
+==================================
+        Event page CSS 
+==================================
+ */
+
+ 
+.event-heading h5{
+  color: #e72f59;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.event-heading h1{
+  color: #282828;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.card-img-top{  
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.card-body > .btn{
+  font-size: 16px;
+  font-weight: 400;
+  color: #585858;
+  background-color: #EFEAE3;
+  border-radius: 0px 0px 0px 0px;
+  padding: 14px 25px 14px 25px;
+  align-items: center;
+}
+
+.card-body > .btn:hover{
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #F41E7E;
+  border-radius: 0px 0px 0px 0px;
+  padding: 14px 25px 14px 25px;
+  text-align: center;
+}
+.card-body > .btn:hover:active{
+  color: rgb(219, 43, 140);
+}
+
+.card{
+  border: 10px solid #EFEAE3;
+  transition: .5s;
+  border-radius: 0;
+
+}
+.card:hover{
+  border-color: #F41E7E;
+}
+
+ 
+  /* 
+==================================
+        Couple page CSS 
+==================================
+ */
+
+
+.couple-content h3{
+    
+    font-weight: bold;
+}
+.social-link >li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+.social-link li a{
+   
+    color: black;
+    list-style: none;
+    padding:8px;
+    font-size: 20px;
+}
+
+.social-link li a:hover, .social-link li a:active{
+    color: #F41E7E;
+}
+
+.couple-content p{
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  /* 
+==================================
+        Brides page CSS 
+==================================
+ */
+ #brides-area{
+  background-color: #FAF5F4;
+  padding: 100px 0;
+  
+ }
+ .brides-img{
+  width: 235px;
+  height: 230px;
+ }
+ .brides-img img{
+  border: 10px solid #fff;
+ }
+
+ .brides-content{
+  background-color: #fff;
+  width: 70%;
+  position: relative;
+  margin-top: -30px;
+  margin-left: 25px;
+ }
+
+ .brides-content h3 a{
+  font-size: 22px;
+  color: #282828;
+  text-decoration: none;
+ }
+ .brides-content p{
+  color: #e72f59;
+ }
+    /* 
+==================================
+        Person CSS 
+==================================
+ */
+ .person-wrap{
+  border: 1px solid #e72f59;
+  border-radius: 10px;
+  background-color: #fff;
+ }
+ .person-img img{
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover;
+ }
+
+
+
+   /* 
+==================================
+        Profile page CSS 
+==================================
+ */
+ .user-info  td{
+  text-transform: capitalize;
+ }
+ .profile-page-area{
+  background-color: #FAF5F4;
+ }
+.profile-sidebar{
+ 
+  background-color: #e72f59;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+}
+.profile-img{
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+.profile-img img{
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-img a{
+  color: #fff;
+}
+.profile-img a:hover{
+  text-decoration: underline;
+}
+.profile-sidebar-menu {
+  border-top: 2px solid #fff;
+  padding-top: 30px;
+}
+.profile-sidebar-menu li a{
+  color: #fff;
+  font-size: 22px;
+  line-height: 44px;
+  font-weight: 400;
+  position: relative;
+
+}
+.profile-sidebar-menu li a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+transition: .5s;
+}
+.profile-sidebar-menu li a:hover::after{
+  width: 100%;
+}
+.user-info{
+  background-color: #fff;
+  padding: 40px;
+  width: 90%;
+  margin: 50px auto;
+  border-radius: 10px;
+  position: relative;
+}
+.edit-btn{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.edit-btn a i{
+  color: #d9d9db;
+  font-size: 18px;
+  transition: .5s;
+  padding: 10px;
+}
+.edit-btn a i:hover{
+  color: #e72f59;
+}
+.user-info table {
+  border: none;
+  font-size: 16px;
+  height: 270px;
+  width: 80%;
+}
+.add-family-icon{
+  width: 60px;
+  height: 50px;
+  background-color: #e72f59;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.add-family-icon i{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+   /* 
+==================================
+        Profile Details page CSS 
+==================================
+ */
+ .image{
+  width: 100%;
+  height: 250px;
+ }
+ .image img{
+  width: 100%;
+  height: 100%;
+ }
+ .profile-details{
+  background-color: #FAF5F4;
+  padding: 50px 0;
+ }
+
+ .pro-info{
+  text-align: center;
+  padding: 40px;
+  font-size: 20px;
+}
+.sl-2 li a{
+  font-size: 24px;
+}
+
+.active{
+  background-color: #e72f59;
+  color: #fff;
+}
+
+.personal-image {
+  
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+}
+.image img{
+  object-fit: cover;
+ }
+.user-details {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+}
+
+.user-details li {
+  margin-bottom: 10px;
+  color: #E72F59;
+  font-style: italic;
+  font-size: 20px;
+ 
+  
+}
+
+.sidebar-heading{
+  background-color: #e72f59;
+  color: #fff;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+}
+.single-item img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.single-item  h3 a{
+  color: #282828;
+  font-size: 18px;
+  margin-left: 10px;
+  transition: .5s;
+}
+.single-item  h3 a:hover{
+  color: #e72f59;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #E72F59;
+    color: white;
+    
+  }
+    
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    background-color: #fff;
+  }
+
+  /* 
+==================================
+            Profile Change CSS 
+==================================
+ */
+ .file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 12px;
+  background-color: #E72F59;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+.file-input__label svg {
+  height: 16px;
+  margin-right: 4px;
+}
+.profile-change-wrap{
+  background-color: #FAF5F4;
+  padding: 50px 0;
+}
